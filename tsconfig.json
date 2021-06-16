@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "target": "es2017",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "strict": false,
+    "noEmit": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+
+    "noUnusedLocals": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "rootDirs": ["/src", "/test", "/mock","./typings"]
+  },
+
+  "include": ["./src", "./mock"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "**/*.private.tsx*"
+  ]
+}
